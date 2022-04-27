@@ -32,6 +32,8 @@ class NekosBest(commands.Cog):
     async def red_delete_data_for_user(self, *, requester: RequestType, user_id: int) -> None:
         super().red_delete_data_for_user(requester=requester, user_id=user_id)
 
+# Internals
+
     async def _api_call(self, route):
         """Calls the supplied route of nekos.best, returns url and if possible source url and anime name"""
         async with self.session.get(f"{self.BASE}{route}") as resp:
@@ -80,12 +82,159 @@ class NekosBest(commands.Cog):
         desc += f"{img[0]}\n"
         await ctx.send(desc)
 
+# Commands
 
+    @commands.command()
+    async def highfive(self, ctx):
+        """Posts an image from the nekos.best highfive endpoint"""
+        await self._post_image(ctx, "highfive")
+
+    @commands.command()
+    async def happy(self, ctx):
+        """Posts an image from the nekos.best happy endpoint"""
+        await self._post_image(ctx, "happy")
+
+    @commands.command()
+    async def sleep(self, ctx):
+        """Posts an image from the nekos.best sleep endpoint"""
+        await self._post_image(ctx, "sleep")
+
+    @commands.command()
+    async def laugh(self, ctx):
+        """Posts an image from the nekos.best laugh endpoint"""
+        await self._post_image(ctx, "laugh")
+
+    @commands.command()
+    async def bite(self, ctx):
+        """Posts an image from the nekos.best bite endpoint"""
+        await self._post_image(ctx, "bite")
+
+    @commands.command()
+    async def poke(self, ctx):
+        """Posts an image from the nekos.best poke endpoint"""
+        await self._post_image(ctx, "poke")
+
+    @commands.command()
+    async def tickle(self, ctx):
+        """Posts an image from the nekos.best tickle endpoint"""
+        await self._post_image(ctx, "tickle")
+
+    @commands.command()
+    async def kiss(self, ctx):
+        """Posts an image from the nekos.best kiss endpoint"""
+        await self._post_image(ctx, "kiss")
+
+    @commands.command()
+    async def wave(self, ctx):
+        """Posts an image from the nekos.best wave endpoint"""
+        await self._post_image(ctx, "wave")
+
+    @commands.command()
+    async def thumbsup(self, ctx):
+        """Posts an image from the nekos.best thumbsup endpoint"""
+        await self._post_image(ctx, "thumbsup")
+
+    @commands.command()
+    async def stare(self, ctx):
+        """Posts an image from the nekos.best stare endpoint"""
+        await self._post_image(ctx, "stare")
+
+    @commands.command()
+    async def cuddle(self, ctx):
+        """Posts an image from the nekos.best cuddle endpoint"""
+        await self._post_image(ctx, "cuddle")
+
+    @commands.command()
+    async def smile(self, ctx):
+        """Posts an image from the nekos.best smile endpoint"""
+        await self._post_image(ctx, "smile")
+
+    @commands.command()
+    async def baka(self, ctx):
+        """Posts an image from the nekos.best baka endpoint"""
+        await self._post_image(ctx, "baka")
+
+    @commands.command()
+    async def blush(self, ctx):
+        """Posts an image from the nekos.best blush endpoint"""
+        await self._post_image(ctx, "blush")
+
+    @commands.command()
+    async def think(self, ctx):
+        """Posts an image from the nekos.best think endpoint"""
+        await self._post_image(ctx, "think")
+
+    @commands.command()
+    async def pout(self, ctx):
+        """Posts an image from the nekos.best pout endpoint"""
+        await self._post_image(ctx, "pout")
+
+    @commands.command()
+    async def facepalm(self, ctx):
+        """Posts an image from the nekos.best facepalm endpoint"""
+        await self._post_image(ctx, "facepalm")
+
+    @commands.command()
+    async def wink(self, ctx):
+        """Posts an image from the nekos.best wink endpoint"""
+        await self._post_image(ctx, "wink")
+
+    @commands.command()
+    async def smug(self, ctx):
+        """Posts an image from the nekos.best smug endpoint"""
+        await self._post_image(ctx, "smug")
+
+    @commands.command()
+    async def cry(self, ctx):
+        """Posts an image from the nekos.best cry endpoint"""
+        await self._post_image(ctx, "cry")
+
+    @commands.command()
+    async def pat(self, ctx):
+        """Posts an image from the nekos.best pat endpoint"""
+        await self._post_image(ctx, "pat")
+
+    @commands.command()
+    async def dance(self, ctx):
+        """Posts an image from the nekos.best dance endpoint"""
+        await self._post_image(ctx, "dance")
+
+    @commands.command()
+    async def feed(self, ctx):
+        """Posts an image from the nekos.best feed endpoint"""
+        await self._post_image(ctx, "feed")
+
+    @commands.command()
+    async def shrug(self, ctx):
+        """Posts an image from the nekos.best shrug endpoint"""
+        await self._post_image(ctx, "shrug")
+
+    @commands.command()
+    async def bored(self, ctx):
+        """Posts an image from the nekos.best bored endpoint"""
+        await self._post_image(ctx, "bored")
+
+    @commands.command()
+    async def hug(self, ctx):
+        """Posts an image from the nekos.best hug endpoint"""
+        await self._post_image(ctx, "hug")
+
+    @commands.command()
+    async def slap(self, ctx):
+        """Posts an image from the nekos.best slap endpoint"""
+        await self._post_image(ctx, "slap")
 
     @commands.command()
     async def neko(self, ctx):
+        """Posts an image from the nekos.best neko endpoint"""
         await self._post_image(ctx, "neko")
-    
+
     @commands.command()
-    async def hug(self, ctx):
-        await self._post_image(ctx, "hug")
+    async def kitsune(self, ctx):
+        """Posts an image from the nekos.best kitsune endpoint"""
+        await self._post_image(ctx, "kitsune")
+
+    @commands.command()
+    async def waifu(self, ctx):
+        """Posts an image from the nekos.best waifu endpoint"""
+        await self._post_image(ctx, "waifu")
