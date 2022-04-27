@@ -225,7 +225,7 @@ class NekosBest(commands.Cog):
         await self._post_image(ctx, "slap")
 
     @commands.command()
-    async def neko(self, ctx):
+    async def nekos(self, ctx):
         """Posts an image from the nekos.best neko endpoint"""
         await self._post_image(ctx, "neko")
 
