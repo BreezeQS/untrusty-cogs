@@ -3,7 +3,7 @@
     "name": "badcclist",
     "short": "cc list link patch",
     "description": "Patches the cc list command with higher threshold for shortening commands.",
-    "install_msg": "This \"cog\" must be loaded/reloaded **AFTER** the customcom cog itself.",
+    "install_msg": "This \"cog\" must be loaded/reloaded **AFTER** the customcom cog itself. \n\n if you did it right cc list will shorten at 300 chars and not 52",
     "author": ["BreezeQS"],
     "required_cogs": {},
     "requirements": [],
