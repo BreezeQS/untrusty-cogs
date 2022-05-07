@@ -1,0 +1,14 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Cog-Creators/Red-DiscordBot/V3/develop/schema/red_cog.schema.json",
+    "name": "badcclist",
+    "short": "cc list link patch",
+    "description": "Patches the cc list command with higher threshold for shortening commands.",
+    "install_msg": "This \"cog\" must be loaded/reloaded **AFTER** the customcom cog itself.",
+    "author": ["BreezeQS"],
+    "required_cogs": {},
+    "requirements": [],
+    "min_bot_version": "3.3.10",
+    "hidden": false,
+    "disabled": false,
+    "type": "COG"
+}
